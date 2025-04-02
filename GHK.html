@@ -1,48 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRIKPH Industrial Facilities</title>
     <link rel="stylesheet" href="GHK.css">
-    <title>GHK Manutenção</title>
+
+    <!-- Link para fontes atrativas do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    
 </head>
+
 <body>
     <main>
     <header>
         <div class="logo">
             <img src="LOGO.png" alt="Logo GRIKPH" />
+            <h1>GRIKPH Industrial Facilities</h1>
         </div>
-
         <nav>
             <ul>
-                <li><a href="#">Quem somos </a></li>
-                <li><a href="#">Facilities</a></li>
-                <li><a href="#">Trabalhe Conosco</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="informativo.html">Quem somos</a></li>
+                <li><a href="informativo.html">Facilities</a></li>
+                <li><a href="informativo.html">Trabalhe Conosco</a></li>
+                <li><a href="informativo.html">Contatos</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="left-section">
             <div class="login-form">
-                <div class="logos">
-                    <img src="logos.png" alt="Logos GRIKPH" />
-                </div>
                 <h2><u>Login</u></h2>
-                <form>
-                    <input type="text" placeholder="Usuario" />
-                    <input type="password" placeholder="Senha" />
+                <form id="loginForm">
+                    <input type="text" id="username" placeholder="Usuário" />
+                    <input type="password" id="password" placeholder="Senha" />
                     <button type="submit">Entrar</button>
                 </form>
-                <p>Esqueceu a senha? <a href="#">Clique aqui!</a></p>
+                <p>Esqueceu a senha? <a href="#" id="forgotPasswordLink">Clique aqui!</a></p>
             </div>
-        </div>
-        <div class="right-section">
-            <p>
-                A GRIKPH facilities atua como provedor de soluções integradas
-                com conhecimento, processos, pessoas e inovação.
-            </p>
         </div>
     </main>
 </body>
+
 </html>
