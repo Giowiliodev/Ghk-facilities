@@ -1,135 +1,97 @@
- {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+*{
+   margin: 0px; 
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'poppins',sans-serif;
 }
 
-header {
-    background-color: #0b1101;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header{
+   margin-left: 42px;
+   margin-top: 47px;
+   font-weight: 400;
+   font-size: 14px;
+   cursor: pointer;
+   word-spacing: 32px;
+   letter-spacing: 1px;
+   color: #17233D;
+   
+  
+}
+.button {
+   background-color: rgba(21, 255, 0, 0.856);
+   border: 1px solid #4cb53b;
+   border-radius: 6px;
+   width: 124px;
+   height: 51px;
+   cursor: pointer;
+ } 
+ img{
+   margin: 163px 0 0 123px;
+   display: inline-block;
+ }
+
+
+
+
+
+.h1{  
+font-family: Poppins;
+font-weight: 700px;
+font-size: 62px;
+line-height: 82px;
+letter-spacing: 0.6px;
+background: #161A49;
+width: 582;
+height: 164;
+top: 342px;
+left: 801px;
+
+
+}
+.p{
+font-family: Poppins;
+font-weight: 400;
+font-size: 18px;
+line-height: 33px;
+letter-spacing: 0.5px;
+background: #4B505A;
+width: 493;
+height: 99;
+top: 553px;
+left: 801px;
+
+
+
 }
 
-/* Estilo para a logo e nome */
-header .logo {
-    display: flex;
-    align-items: center;
+.button2{
+font-family: Poppins;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 1px;
+color: #6FBF44;
+cursor: pointer;
+background: transparent;
+border: none;
+width: 112;
+height: 27;
+top: 707px;
+left: 801px;
+
+
+
+
+
 }
 
-header .logo img {
-    height: 70px;
-    margin-right: 10px;
+div{
+   display: inline-block;
+   margin-left: 85px;
+   width: 493px;
 }
 
-header .logo h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
-    color: white;
-    margin: 0;
-}
 
-/* Estilizando o menu de navegação */
-nav {
-    display: flex;
-}
 
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
 
-nav ul li {
-    margin-left: 20px;
-}
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-/* Efeito de hover nas abas */
-nav ul li a:hover {
-    color: #ffa500;
-    transform: scale(1.05);
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    height: 80vh;
-}
-
-.left-section, .right-section {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-}
-
-.left-section {
-    background-color: #ffa500;
-}
-
-.login-form {
-    background-color: white;
-    padding: 35px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.login-form h2 {
-    margin-bottom: 20px;
-}
-
-.login-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.login-form button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .left-section, .right-section {
-        flex: none;
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
