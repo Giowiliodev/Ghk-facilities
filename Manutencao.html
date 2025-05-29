@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRIKPH Manutenção</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #0b1101;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 70px;
+      margin-right: 10px;
+    }
+
+    header .logo h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 26px;
+      color: white;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: color 0.3s ease, transform 0.3s ease;
+      align-items: center;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+
+    nav ul li a:hover {
+      color: #ffa500;
+      transform: scale(1.05);
+    }
+
+    main {
+      height: calc(100vh - 80px);
+    }
+
+    .left-section {
+      background: url('1271.jpg') no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    select,
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="LOGO.png" alt="Logo GRIKPH" />
+      <h1>GRIKPH Facilities</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./oficial.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="left-section">
+      <div class="form-container">
+        <h1>Solicitação de Serviço</h1>
+        <form onsubmit="return redirecionarParaOk(event)">
+          <label for="service">Serviço:</label>
+          <select id="service" name="servico" onchange="mostrarOpcoes()" required>
+            <option value="">-- Selecione --</option>
+            <option value="limpeza">Limpeza</option>
+            <option value="manutencao">Manutenção</option>
+            <option value="portaria">Portaria</option>
+            <option value="bombeiro">Bombeiro</option>
+            <option value="transporte">Transporte</option>
+          </select>
+
+          <div id="optionsLimpeza" style="display: none;">
+            <label for="tipoLimpeza">Tipo de Limpeza:</label>
+            <select id="tipoLimpeza" name="subcategoria">
+              <option value="">-- Selecione --</option>
+              <option value="leve">Limpeza Leve</option>
+              <option value="pesada">Limpeza Pesada</option>
+              <option value="coleta">Coleta de Entulhos</option>
+              <option value="infectantes">Coleta de Lixo Infectante</option>
+            </select>
+          </div>
+
+          <div id="optionsmanutencao" style="display: none;">
+            <label for="tipoManutencao">Categoria de Manutenção:</label>
+            <select id="tipoManutencao" name="subcategoria">
+              <option value="">-- Selecione --</option>
+              <option value="civil">Civil</option>
+              <option value="eletrica">Elétrica</option>
+              <option value="hidraulica">Hidráulica</option>
+              <option value="refrigeracao">Refrigeração</option>
+            </select>
+          </div>
+
+          <div id="optionsportaria" style="display: none;">
+            <label for="tipoPortaria">Tipo de Portaria:</label>
+            <select id="tipoPortaria" name="subcategoria">
+              <option value="">-- Selecione --</option>
+              <option value="encomendas">Encomendas</option>
+              <option value="delivery">Delivery</option>
+            </select>
+          </div>
+
+          <div id="optionsbombeiro" style="display: none;">
+            <label for="tipoBombeiro">Tipo de Bombeiro:</label>
+            <select id="tipoBombeiro" name="subcategoria">
+              <option value="">-- Selecione --</option>
+              <option value="atendimento">Atendimento de Emergência</option>
+              <option value="isolamento">Isolamento de Área</option>
+            </select>
+          </div>
+
+          <div id="optionstransporte" style="display: none;">
+            <label for="tipotransporte">Tipo de Transporte:</label>
+            <select id="tipotransporte" name="subcategoria">
+              <option value="">-- Selecione --</option>
+              <option value="interno">Transportes Internos</option>
+              <option value="externo">Transportes Externos</option>
+              <option value="atipico">Outros Destinos</option>
+            </select>
+          </div>
+
+          <label for="local">Descreva o local:</label>
+          <input type="text" id="local" name="local" required>
+
+          <label for="descricao">Descrição do serviço:</label>
+          <input type="text" id="descricao" name="descricao" required>
+
+          <label for="email">E-mail de confirmação:</label>
+          <input type="email" id="email" name="email" required>
+
+          <input type="submit" value="Solicitar Serviço">
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Grikph Facilities</p>
+  </footer>
+
+  <script>
+    function mostrarOpcoes() {
+      const opcoes = {
+        limpeza: 'optionsLimpeza',
+        manutencao: 'optionsmanutencao',
+        portaria: 'optionsportaria',
+        bombeiro: 'optionsbombeiro',
+        transporte: 'optionstransporte'
+      };
+
+      Object.values(opcoes).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = 'none';
+      });
+
+      const servico = document.getElementById('service').value;
+      const opcaoSelecionada = opcoes[servico];
+      if (opcaoSelecionada && document.getElementById(opcaoSelecionada)) {
+        document.getElementById(opcaoSelecionada).style.display = 'block';
+      }
+    }
+
+    function redirecionarParaOk(event) {
+      event.preventDefault(); // impede envio real
+      // Aqui você poderia adicionar validações adicionais se quiser
+      window.location.href = "Manutencao-ok.html";
+      return false;
+    }
+  </script>
+
+</body>
+</html>

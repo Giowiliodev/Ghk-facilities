@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRIKPH - Serviços</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('1271.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background-color: #0b1101;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo img {
+      height: 70px;
+      margin-right: 10px;
+    }
+
+    header .logo h1 {
+      font-size: 26px;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffa500;
+      transform: scale(1.05);
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+    }
+
+    .left-section {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 600px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .serviços-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .serviços-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .serviço {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .serviço img {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .serviço button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .serviço button:hover {
+      background-color: #3e8e41;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="LOGO.png" alt="Logo GRIKPH" />
+      <h1>GRIKPH Facilities</h1>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="oficial.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="left-section">
+      <div class="serviços-form">
+        <h2>Serviços</h2>
+        <form id="ServiçosForm">
+          <div class="serviço">
+            <img src="manutencao.png" alt="Serviço Manutenção">
+            <button type="button">Manutenção</button>
+          </div>
+          <div class="serviço">
+            <img src="limpeza.png" alt="Serviço Limpeza">
+            <button type="button">Limpeza</button>
+          </div>
+          <div class="serviço">
+            <img src="portaria.png" alt="Serviço Portaria">
+            <button type="button">Portaria</button>
+          </div>
+          <div class="serviço">
+            <img src="bombeiro.png" alt="Serviço Bombeiro">
+            <button type="button">Bombeiro</button>
+          </div>
+          <div class="serviço">
+            <img src="transporte.png" alt="Serviço Transporte">
+            <button type="button">Transporte</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Grikph Facilities</p>
+  </footer>
+
+</body>
+</html>

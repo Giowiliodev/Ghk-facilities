@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIKPH Esqueceu senha </title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('1271.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        header {
+            background-color: #0b1101;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Estilo para a logo e nome */
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 70px;
+            margin-right: 10px;
+        }
+
+        header .logo h1 {
+            font-size: 26px;
+            margin: 0;
+        }
+
+        /* Estilizando o menu de navegação */
+        nav {
+            display: flex;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Efeito de hover nas abas */
+        nav ul li a:hover {
+            color: #ffa500;
+            transform: scale(1.05);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            height: 40vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .form-container input[type="email"],
+        .form-container input[type="submit"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #4CAF50;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGO.png" alt="Logo GRIKPH" />
+            <h1>GRIKPH Facilities</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./oficial.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1>Esqueceu a Senha?</h1>
+            <p>Insira seu e-mail abaixo para receber instruções sobre como redefinir sua senha.</p>
+            <form action="Senha-ok.html" method="GET">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2025 Grikph Facilities</p>
+    </footer>
+</body>
+
+</html>
